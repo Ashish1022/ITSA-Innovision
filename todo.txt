@@ -1,0 +1,16 @@
+Landing page -
+
+Events - 
+    -- Past Events
+
+    -- Upcoming Events
+        -- Register for upcoming Events
+            -- payments system for registration
+
+Teams -
+    -- Creative Team
+        -- Banner
+        -- Individual card for member
+    -- Technical Team
+        -- Banner
+        -- Individual card for member
