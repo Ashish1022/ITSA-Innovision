@@ -1,11 +1,10 @@
-import mongoose, { Mongoose } from "mongoose";
+import mongoose, { Mongoose } from 'mongoose'
 
+const MONGODB_URI = process.env.MONGODB_URI!;
 
-const MONGODB_URI = process.env.MONGODB_URI!
-
-interface MongooseConnection{
+interface MongooseConnection {
     conn: Mongoose | null;
-    promise: Promise<Mongoose> | null
+    promise: Promise<Mongoose> | null;
 }
 
 let cache: MongooseConnection = (global as any).mongoose;
@@ -18,7 +17,7 @@ if(!cache){
 }
 
 export const connect = async() => {
-    if(cache.conn) return null
+    if(cache.conn) return cache.conn
 
     cache.promise = cache.promise || mongoose.connect(MONGODB_URI, {
         dbName: "itsa",
