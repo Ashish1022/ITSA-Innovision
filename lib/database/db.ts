@@ -1,31 +1,33 @@
-import mongoose, { Mongoose } from 'mongoose'
+import mongoose, { Mongoose } from "mongoose";
 
 const MONGODB_URI = process.env.MONGODB_URI!;
 
-interface MongooseConnection {
-    conn: Mongoose | null;
-    promise: Promise<Mongoose> | null;
+interface MongooseConn {
+  conn: Mongoose | null;
+  promise: Promise<Mongoose> | null;
 }
 
-let cache: MongooseConnection = (global as any).mongoose;
+let cached: MongooseConn = (global as any).mongoose;
 
-if(!cache){
-    cache = (global as any).mongoose = {
-        conn: null,
-        promise: null
-    }
+if (!cached) {
+  cached = (global as any).mongoose = {
+    conn: null,
+    promise: null,
+  };
 }
 
-export const connect = async() => {
-    if(cache.conn) return cache.conn
+export const connect = async () => {
+  if (cached.conn) return cached.conn;
 
-    cache.promise = cache.promise || mongoose.connect(MONGODB_URI, {
-        dbName: "itsa",
-        bufferCommands: false,
-        connectTimeoutMS: 10000
-    })
+  cached.promise =
+    cached.promise ||
+    mongoose.connect(MONGODB_URI, {
+      dbName: "itsa",
+      bufferCommands: false,
+      connectTimeoutMS: 10000,
+    });
 
-    cache.conn = await cache.promise;
+  cached.conn = await cached.promise;
 
-    return cache.conn;
-}
+  return cached.conn;
+};
