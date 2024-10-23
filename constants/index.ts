@@ -13,7 +13,7 @@ export const headerLinks = [
     },
     {
         label: 'Create Event',
-        route: '/events/create-event',
+        route: '/event/create-event',
     },
 ]
 
