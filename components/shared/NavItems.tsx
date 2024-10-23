@@ -11,24 +11,11 @@ const NavItems = () => {
   const [isMember, setIsMember] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const response = await fetch('/api/users/isMember');
-        if (!response.ok) throw new Error('Failed to fetch user');
-
-        const data = await response.json();
-        console.log(data)
-        setIsMember(data.isMember);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchUser();
-  }, []);
+  try {
+    
+  } catch (error) {
+    
+  }
 
   return (
     <ul className="md:flex-between flex w-full flex-col items-start gap-5 md:flex-row">
