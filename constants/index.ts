@@ -9,11 +9,11 @@ export const headerLinks = [
     },
     {
         label: 'Teams',
-        route: '/profile',
+        route: '/teams',
     },
     {
         label: 'Create Event',
-        route: '/create-event',
+        route: '/events/create-event',
     },
 ]
 
