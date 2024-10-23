@@ -56,7 +56,7 @@ export async function POST(req: Request) {
     // CREATE User in MONGODB
 
     if (eventType === "user.created") {
-        const { id, email_addresses, image_url, first_name, last_name } = evt.data;
+        const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
 
         const user = {
             clerkId: id,
@@ -64,7 +64,7 @@ export async function POST(req: Request) {
             firstname: first_name,
             lastname: last_name,
             photo: image_url,
-            isMember: false
+            username: username
         }
 
         const newUser = await createUser(user)

@@ -11,6 +11,11 @@ const UserSchema = new Schema({
         required: true,
         unique: true
     },
+    username :{
+        type: String,
+        required: true,
+        unique: true
+    },
     firstname :{
         type: String,
         required: true,
@@ -26,10 +31,7 @@ const UserSchema = new Schema({
         required: true,
         unique: true
     },
-    isMember: {
-        type: Boolean,
-        default: false
-    }
+   
 });
 
 const User = models.User || model("User", UserSchema)
