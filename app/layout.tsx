@@ -4,6 +4,7 @@ import "./globals.css";
 import { Poppins } from 'next/font/google'
 import ConvexClerkProvider from "@/providers/ConvexClerkProvider";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         <body className={poppins.variable}>
           {children}
           <Toaster/>
+          <Analytics/>
         </body>
       </ConvexClerkProvider>
     </html>
