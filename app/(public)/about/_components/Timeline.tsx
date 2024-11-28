@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 import { FaStar, FaHeart, FaFire } from 'react-icons/fa';
-import { useEffect, useRef } from 'react';
 const events = [
   {
-    date: "2023-01-01",
-    title: "New Year Celebration",
+    date: "2023-03-19",
+    title: "INNOVISION 2023",
     description: "Celebrated the new year.",
     icon: <FaStar />,
     image: "/assets/images/human_ludo.webp",
@@ -44,9 +43,6 @@ const events = [
   },
   // Add more events with different colors as needed
 ];
-
-
-
 
 
 const Timeline = () => {

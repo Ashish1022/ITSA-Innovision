@@ -103,7 +103,7 @@ body {
 
   /* 40 */
   .h2-bold {
-    @apply font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+    @apply font-bold text-[30px] leading-[40px] lg:text-[34px] lg:leading-[42px] xl:text-[38px] xl:leading-[46px];
   }
 
   .h2-medium {
@@ -144,7 +144,7 @@ body {
 
   /* 20 */
   .p-bold-20 {
-    @apply font-bold text-[20px] leading-[30px] tracking-[2%];
+    @apply font-bold text-[16px] leading-[26px] tracking-[2%];
   }
 
   .p-semibold-20 {
@@ -169,7 +169,7 @@ body {
   }
 
   .p-regular-18 {
-    @apply text-[18px] font-normal leading-[28px] tracking-[2%];
+    @apply text-[16px] font-normal leading-[24px] tracking-[2%];
   }
 
   /* 16 */
@@ -178,7 +178,7 @@ body {
   }
 
   .p-medium-16 {
-    @apply text-[16px] font-medium leading-[24px];
+    @apply text-[14px] font-medium leading-[22px];
   }
 
   .p-regular-16 {
@@ -281,4 +281,160 @@ body {
 
 .react-datepicker__time-list-item--selected {
   background-color: #624cf5 !important;
+}
+
+
+.page {
+  padding: 2rem;
+  background: linear-gradient(120deg, #ffecd2, #fcb69f);
+
+
+  margin: 0 auto;
+}
+
+.teams-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Team Card styling */
+.team-card {
+  position: relative;
+  background: linear-gradient(145deg, #ffffff, #f2f2f2);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: rotate(-2deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at top left, #fce38a, transparent);
+  opacity: 0.2;
+  z-index: 0;
+  transform: rotate(25deg);
+}
+
+.team-card:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-name {
+  font-size: 2rem;
+  color: #3a3a7a;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.team-head, .members {
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.team-head h3, .members h3 {
+  font-size: 1.5rem;
+  color: #41436a;
+  margin-bottom: 1rem;
+}
+
+/* Decorative zigzag under headers */
+.team-head h3::after, .members h3::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px auto;
+  background: linear-gradient(90deg, #e63946, #f77f00);
+}
+
+/* Member Card styling */
+.member-card {
+  background: #ffffff;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.member-card:hover {
+  transform: translateY(-8px) rotate(2deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  border: 3px solid #f8f8f8;
+}
+
+.member-card:hover .member-image {
+  transform: scale(1.1);
+}
+
+.member-name {
+  font-size: 1.2rem;
+  color: #3a3a7a;
+  margin: 0.5rem 0;
+}
+
+.member-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Button in team card */
+.team-card .view-more {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #6a0572, #a32cc4);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.team-card .view-more:hover {
+  background: linear-gradient(90deg, #3a0571, #6a0572);
+}
+
+/* Staggered Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.h1-teams {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }

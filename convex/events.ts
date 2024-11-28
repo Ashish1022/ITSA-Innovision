@@ -46,3 +46,12 @@ export const getAllEvents = query({
         return await ctx.db.query("events").order("desc").collect();
     },
 });
+
+export const getEventById = query({
+    args: {
+        eventId: v.id("events")
+    },
+    handler: async (ctx, args) => {
+        return await ctx.db.get(args.eventId);
+    }
+})

@@ -3,8 +3,8 @@
 
 import { ClerkProvider, useAuth } from "@clerk/clerk-react";
 import { ConvexProviderWithClerk } from "convex/react-clerk";
-import { AuthLoading, ConvexReactClient } from "convex/react";
-import Loading from "@/components/auth/Loading";
+import { ConvexReactClient } from "convex/react";
+
 
 interface ConvexClerkProviderProps {
     children: React.ReactNode
