@@ -118,7 +118,7 @@ const Home = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/assets/images/planning.jpg"
+                    src="/assets/images/planning.png"
                     alt="Council Planning"
                     layout="fill"
                     objectFit="cover"
