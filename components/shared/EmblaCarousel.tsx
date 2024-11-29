@@ -45,9 +45,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <Image
                 src={index.img}
                 alt="Students Celebrating"
-                width={500}
+                width={550}
                 height={500}
-                className="mx-auto"
+                className="border-4 border-fuchsia-500"
               />
               </div>
             </div>
@@ -55,8 +55,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls">
-        <div className="embla__buttons">
+      <div className="embla__controls p-2">
+        <div className="embla__buttons text-primary-500 rounded-full">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

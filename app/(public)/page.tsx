@@ -51,7 +51,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <motion.div
-              className="relative overflow-hidden rounded-lg shadow-xl transition-transform transform hover:scale-105"
+              className="relative overflow-hidden rounded-lg shadow-xl transition-transform transform hover:scale-105 border-2 border-primary-500 bg-teams-bg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >

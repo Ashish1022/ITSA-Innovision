@@ -4,6 +4,14 @@ import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
+import GoToTopButton from "@/components/shared/GoToTopButton";
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
 
 export default function RootLayout({
     children,
@@ -20,6 +28,7 @@ export default function RootLayout({
                 </AnimatePresence>
             </main>
             <Footer />
+            <GoToTopButton />
         </div>
     );
 }
