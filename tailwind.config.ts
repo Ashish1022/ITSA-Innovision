@@ -64,7 +64,7 @@ const config = {
       backgroundImage: {
         'dotted-pattern': "url('/assets/images/dotted-pattern.png')",
         'hero-img': "url('/assets/images/hero.png')",
-        'teams-bg': "url('/assets/images/teams_bg.webp')",
+        'teams-bg': "url('/assets/images/teams_bg.svg')",
       },
       keyframes: {
         "accordion-down": {
