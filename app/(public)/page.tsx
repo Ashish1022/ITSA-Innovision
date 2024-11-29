@@ -31,7 +31,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              We are a team of passionate students who work together to make school life fun, inspiring, and full of exciting opportunities. Join us in making a difference every day!
+              We are a team of passionate students who work together to make college life fun, inspiring, and full of exciting opportunities. Join us in making a difference every day!
             </motion.p>
             <motion.p
               className="text-md sm:text-lg text-white/70 italic"
@@ -135,7 +135,7 @@ const Home = () => {
               >
                 <h3 className="text-2xl font-semibold text-[#624CF5]">3. Collaboration with Faculty</h3>
                 <p className="text-gray-600">
-                  We collaborate with teachers and administrators to make sure everything runs smoothly and is aligned with school policies.
+                  We collaborate with teachers and administrators to make sure everything runs smoothly and is aligned with college policies.
                 </p>
                 <motion.div
                   className="w-full h-64 relative"
@@ -203,7 +203,7 @@ const Home = () => {
               >
                 <h4 className="text-xl font-semibold text-[#624CF5]">Morning: Team Meeting</h4>
                 <p className="text-gray-600">
-                  We start the day with a team meeting to discuss the ongoing projects, upcoming events, and any ideas we have for the school.
+                  We start the day with a team meeting to discuss the ongoing projects, upcoming events, and any ideas we have for the college.
                 </p>
                 <motion.div
                   className="w-full h-64 relative"

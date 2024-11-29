@@ -39,7 +39,7 @@ const events: Event[] = [
   {
     date: "2023-05-10",
     title: "ECO CAMPAIGN",
-    description: "Promoting sustainability in our school.",
+    description: "Promoting sustainability in our college.",
     icon: <FaHeart />,
     image: "/assets/images/eco_campaign.webp",
     color: "bg-yellow-300",

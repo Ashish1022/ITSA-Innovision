@@ -25,7 +25,7 @@ const AboutPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Learn about the vision, milestones, and the impact of the Student Council on our school community.
+            Learn about the vision, milestones, and the impact of the Student Council on our college community.
           </motion.p>
         </div>
       </section>
@@ -43,7 +43,7 @@ const AboutPage = () => {
               Our Mission
             </motion.h2>
             <p className="text-gray-600">
-              Empower students to lead, innovate, and create a vibrant school community where everyone thrives.
+              Empower students to lead, innovate, and create a vibrant college community where everyone thrives.
             </p>
           </div>
           <div className="space-y-4">
