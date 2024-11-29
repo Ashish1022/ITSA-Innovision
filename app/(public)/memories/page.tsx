@@ -1,7 +1,5 @@
 "use client"
 
-import Head from "next/head"
-import Timeline from "./_components/Timeline"
 import Transition from "@/components/shared/Transition"
 import EventGallery from "./_components/EventGallery"
 

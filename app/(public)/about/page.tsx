@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Timeline from '../about/_components/Timeline';
+import Timeline from './_components/Timeline';
+
 
 const AboutPage = () => {
   return (
