@@ -174,3 +174,19 @@ export const teams: Team[] = [
     ],
   },
 ];
+
+
+export const carousel = [
+  {
+    id:1,
+    img: '/assets/teams/itsa.webp'
+  },
+  {
+    id:2,
+    img: '/assets/teams/team.webp'
+  },
+  {
+    id:3,
+    img: '/assets/images/faculty_collab.png'
+  },
+]

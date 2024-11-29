@@ -7,6 +7,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { FaRegLightbulb } from 'react-icons/fa';
 import { Separator } from '@/components/ui/separator';
+import EmblaCarousel from '@/components/shared/EmblaCarousel';
 
 const Home = () => {
   return (
@@ -54,13 +55,7 @@ const Home = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <Image
-                src="/assets/teams/team.webp"
-                alt="Students Celebrating"
-                width={500}
-                height={500}
-                className="mx-auto"
-              />
+              <EmblaCarousel/>
             </motion.div>
           </motion.div>
         </div>
@@ -98,11 +93,11 @@ const Home = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/assets/teams/team.webp"
+                    src="/assets/images/brainstorm.png"
                     alt="Council Brainstorming"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg border-4 border-primary-500"
                   />
                 </motion.div>
               </motion.div>
@@ -123,11 +118,11 @@ const Home = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/assets/teams/team.webp"
+                    src="/assets/images/planning.jpg"
                     alt="Council Planning"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg border-4 border-primary-500"
                   />
                 </motion.div>
               </motion.div>
@@ -148,11 +143,11 @@ const Home = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/assets/teams/team.webp"
+                    src="/assets/images/faculty_collab.png"
                     alt="Faculty Collaboration"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg border-4 border-primary-500"
                   />
                 </motion.div>
               </motion.div>
@@ -177,7 +172,7 @@ const Home = () => {
                     alt="Event Day"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg border-4 border-primary-500"
                   />
                 </motion.div>
               </motion.div>
@@ -354,70 +349,71 @@ const Home = () => {
           >
             {/* Fact Card 1 */}
             <motion.div
-              className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+              className="bg-white p-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              <div className="flex items-center space-x-4 mb-4">
-                <FaRegLightbulb className="text-[#624CF5] text-3xl" />
-                <h4 className="text-xl font-semibold text-[#624CF5]">Over 10 Events a Year!</h4>
+              <div className="flex items-center space-x-2 mb-4">
+                <FaRegLightbulb className="text-[#624CF5] text-2xl" />
+                <h4 className="text-lg font-semibold text-[#624CF5]">"I’ll Just Wing It"</h4>
               </div>
-              <p className="text-lg text-gray-700">
-                The Student Council organizes over 10 events each year, ranging from school dances to charity fundraisers.
+              <p className="text-md text-justify text-gray-700">
+              The student council motto: "We have no idea what we’re doing, but we’ll do it with enthusiasm and pretend we’ve got it all under control!"
               </p>
             </motion.div>
 
             {/* Fact Card 2 */}
             <motion.div
-              className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+              className="bg-white p-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              <div className="flex items-center space-x-4 mb-4">
-                <FaRegLightbulb className="text-[#624CF5] text-3xl" />
-                <h4 className="text-xl font-semibold text-[#624CF5]">50% Student Participation</h4>
+              <div className="flex items-center space-x-2 mb-4">
+                <FaRegLightbulb className="text-[#624CF5] text-2xl" />
+                <h4 className="text-lg font-semibold text-[#624CF5]">The Budget Dilemma</h4>
               </div>
-              <p className="text-lg text-gray-700">
-                More than 50% of the school’s students actively participate in Council events and initiatives.
+              <p className="text-md text-justify text-gray-700">
+                Managing a student council budget is like trying to buy a yacht with the funds for a pizza party. You’ll spend hours debating whether to splurge on decorations or get enough snacks for everyone.
               </p>
             </motion.div>
 
             {/* Fact Card 3 */}
             <motion.div
-              className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+              className="bg-white p-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.9 }}
             >
-              <div className="flex items-center space-x-4 mb-4">
-                <FaRegLightbulb className="text-[#624CF5] text-3xl" />
-                <h4 className="text-xl font-semibold text-[#624CF5]">Monthly Meetings</h4>
+              <div className="flex items-center space-x-2 mb-4">
+                <FaRegLightbulb className="text-[#624CF5] text-2xl" />
+                <h4 className="text-lg font-semibold text-[#624CF5]">Mini Government</h4>
               </div>
-              <p className="text-lg text-gray-700">
-                The Student Council holds monthly meetings to plan new initiatives and ensure all students’ voices are heard.
+              <p className="text-md text-justify text-gray-700">
+                The student council is often structured similarly to a government. It has a president, vice president, treasurer, and representatives, and sometimes even committees for various tasks like social events, community outreach.
               </p>
             </motion.div>
 
             {/* Fact Card 4 */}
             <motion.div
-              className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+              className="bg-white p-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
-              <div className="flex items-center space-x-4 mb-4">
-                <FaRegLightbulb className="text-[#624CF5] text-3xl" />
-                <h4 className="text-xl font-semibold text-[#624CF5]">Fundraising for the School</h4>
+              <div className="flex items-center space-x-2 mb-4">
+                <FaRegLightbulb className="text-[#624CF5] text-2xl" />
+                <h4 className="text-lg font-semibold text-[#624CF5]">It's Not All Glamorous</h4>
               </div>
-              <p className="text-lg text-gray-700">
-                The Council raises funds for school improvements, including new equipment, supplies, and student programs.
+              <p className="text-md text-gray-700 text-justify">
+                While it may seem glamorous to be a student council president, the role often involves a lot of behind-the-scenes work—handling budgets, and organizing endless meetings.
               </p>
             </motion.div>
           </motion.div>
         </div>
       </section>
+      <Separator className="border border-primary-500" />
     </>
   )
 }
