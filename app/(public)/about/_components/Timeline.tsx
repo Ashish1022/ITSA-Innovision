@@ -10,36 +10,36 @@ const events = [
     color: "bg-red-300"
   },
   {
-    date: "2023-01-01",
-    title: "New Year Celebration",
+    date: "2023-03-19",
+    title: "INNOVISION 2023",
     description: "Celebrated the new year.",
     icon: <FaStar />,
     image: "/assets/images/human_ludo.webp",
     color: "bg-red-300"
   },
   {
-    date: "2023-01-01",
-    title: "New Year Celebration",
+    date: "2023-03-19",
+    title: "INNOVISION 2023",
     description: "Celebrated the new year.",
     icon: <FaStar />,
     image: "/assets/images/human_ludo.webp",
     color: "bg-red-300"
   },
   {
-    date: "2023-02-14",
-    title: "Valentine's Day",
-    description: "Spent time with loved ones.",
-    icon: <FaHeart />,
+    date: "2023-03-19",
+    title: "INNOVISION 2023",
+    description: "Celebrated the new year.",
+    icon: <FaStar />,
     image: "/assets/images/human_ludo.webp",
-    color: "bg-pink-300"
+    color: "bg-red-300"
   },
   {
-    date: "2023-07-04",
-    title: "Independence Day",
-    description: "Fireworks and barbecues.",
-    icon: <FaFire />,
+    date: "2023-03-19",
+    title: "INNOVISION 2023",
+    description: "Celebrated the new year.",
+    icon: <FaStar />,
     image: "/assets/images/human_ludo.webp",
-    color: "bg-blue-300"
+    color: "bg-red-300"
   },
   // Add more events with different colors as needed
 ];

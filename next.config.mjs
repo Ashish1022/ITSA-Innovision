@@ -5,7 +5,11 @@ const nextConfig = {
             {
                 protocol: "https",
                 hostname: "lovely-spider-570.convex.cloud"
-            }
+            },
+            {
+                protocol: "https",
+                hostname: "images.unsplash.com"
+            },
         ]
     },
     typescript:{
