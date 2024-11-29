@@ -6,12 +6,16 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import { Button } from '../ui/button';
 
-const NavItems = () => {
+interface NavItemsProps {
+  onLinkClick?: () => void;
+}
+
+const NavItems = ({onLinkClick}:NavItemsProps) => {
 
   const pathname = usePathname();
 
   return (
-    <ul className="md:flex-between flex w-full flex-col items-start gap-5 md:flex-row">
+    <ul className="md:flex-between flex w-full flex-col items-start gap-8 md:flex-row">
       {pathname.includes('/admin') ? (
         adminHeaderLinks.map((link) => {
           const isActive = pathname === link.route;
@@ -22,7 +26,7 @@ const NavItems = () => {
               className={`${isActive && 'text-primary-500'
                 } flex-center p-medium-16 whitespace-nowrap`}
             >
-              <Link href={link.route}>{link.label}</Link>
+              <Link href={link.route} onClick={onLinkClick}>{link.label}</Link>
             </li>
           )
         })
@@ -35,7 +39,7 @@ const NavItems = () => {
             className={`${isActive && 'text-primary-500'
               } flex-center p-medium-16 whitespace-nowrap`}
           >
-            <Link href={link.route}>{link.label}</Link>
+            <Link href={link.route} onClick={onLinkClick}>{link.label}</Link>
           </li>
         )
       }))}

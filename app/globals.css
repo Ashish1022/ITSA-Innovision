@@ -83,6 +83,12 @@ body {
 
 /* ========================================== TAILWIND STYLES */
 @layer utilities {
+  
+
+  .hover\:opacity-75:hover {
+    @apply opacity-75;
+  }
+
   .wrapper {
     @apply max-w-7xl lg:mx-auto p-4 md:px-10 xl:px-0 w-full;
   }
@@ -286,9 +292,7 @@ body {
 
 .page {
   padding: 2rem;
-  background: linear-gradient(120deg, #ffecd2, #fcb69f);
-
-
+  /* background: linear-gradient(120deg, #ffecd2, #fcb69f); */
   margin: 0 auto;
 }
 
@@ -301,7 +305,7 @@ body {
 /* Team Card styling */
 .team-card {
   position: relative;
-  background: linear-gradient(145deg, #ffffff, #f2f2f2);
+  background: linear-gradient(145deg, #fdf0e0, #f2f2f2);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -340,20 +344,23 @@ body {
   letter-spacing: 1px;
 }
 
-.team-head, .members {
+.team-head,
+.members {
   margin-top: 2rem;
   position: relative;
   z-index: 1;
 }
 
-.team-head h3, .members h3 {
+.team-head h3,
+.members h3 {
   font-size: 1.5rem;
   color: #41436a;
   margin-bottom: 1rem;
 }
 
 /* Decorative zigzag under headers */
-.team-head h3::after, .members h3::after {
+.team-head h3::after,
+.members h3::after {
   content: '';
   display: block;
   width: 50px;
@@ -427,6 +434,7 @@ body {
     opacity: 0;
     transform: translateY(50px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

@@ -6,13 +6,14 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion';
 import { FaRegLightbulb } from 'react-icons/fa';
+import { Separator } from '@/components/ui/separator';
 
 const Home = () => {
   return (
     <>
       <Transition />
       <section className="bg-[#f5f7ff] text-gray-800">
-      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col-reverse lg:flex-row items-center gap-12 z-10">
+        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col-reverse lg:flex-row items-center gap-12 z-10">
           {/* Left Content */}
           <motion.div
             className="lg:w-1/2 space-y-6"
@@ -63,9 +64,9 @@ const Home = () => {
             </motion.div>
           </motion.div>
         </div>
-
+        <Separator className="border border-primary-500" />
         {/* Behind the Scenes Section */}
-        <motion.div 
+        <motion.div
           className="bg-[#e9ebf3] py-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -183,7 +184,7 @@ const Home = () => {
             </div>
           </div>
         </motion.div>
-
+        <Separator className="border border-primary-500" />
         {/* A Day in the Life of a Council Member */}
         <motion.div
           className="py-20 bg-[#f5f7ff]"
@@ -197,7 +198,7 @@ const Home = () => {
               Ever wondered what it’s like to be a part of the Student Council? Here’s a sneak peek into a typical day:
             </p>
             <div className="flex flex-col md:flex-row gap-16 mt-12">
-              
+
               {/* Morning: Team Meeting */}
               <motion.div
                 className="space-y-6"
@@ -333,6 +334,7 @@ const Home = () => {
           </div>
         </motion.div>
       </section>
+      <Separator className="border border-primary-500" />
       <section className="bg-gradient-to-r from-[#e9ebf3] via-[#f1f5fb] to-[#ffffff] py-16 text-center">
         <div className="max-w-7xl mx-auto px-6">
           <motion.h3
@@ -343,7 +345,7 @@ const Home = () => {
           >
             Did You Know?
           </motion.h3>
-          
+
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16"
             initial={{ opacity: 0 }}

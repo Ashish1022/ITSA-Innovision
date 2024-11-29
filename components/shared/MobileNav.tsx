@@ -1,29 +1,37 @@
+import { useState } from "react";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
-import Image from "next/image"
-import { Separator } from "@/components/ui/separator"
-import NavItems from "./NavItems"
+} from "@/components/ui/sheet";
+import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
+import NavItems from "./NavItems";
 
+const MobileNav: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-const MobileNav = () => {
+  const closeSheet = () => setIsOpen(false);
+
   return (
     <nav className="md:hidden">
-      <Sheet>
-        <SheetTrigger className="align-middle" >
-          <Image
-            src="/assets/icons/menu.svg"
-            alt="menu"
-            width={24}
-            height={24}
-            className="cursor-pointer"
-          />
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
+        <SheetTrigger asChild>
+          <button>
+            <Image
+              src="/assets/icons/menu.svg"
+              alt="menu"
+              width={24}
+              height={24}
+              className="cursor-pointer"
+            />
+          </button>
         </SheetTrigger>
-        <SheetContent side='left' className="flex flex-col gap-6 bg-white md:hidden backdrop-blur-xl shadow-xl">
+        <SheetContent
+          side="left"
+          className="flex flex-col gap-6 bg-white backdrop-blur-xl shadow-xl"
+        >
           <SheetTitle>
             <Image
               src="/assets/images/innovision.svg"
@@ -33,13 +41,12 @@ const MobileNav = () => {
             />
           </SheetTitle>
           <Separator className="border border-gray-50" />
-          <SheetClose>
-            <NavItems />
-          </SheetClose>
+          {/* Pass the closeSheet function to NavItems */}
+          <NavItems onLinkClick={closeSheet} />
         </SheetContent>
       </Sheet>
     </nav>
-  )
-}
+  );
+};
 
-export default MobileNav
+export default MobileNav;

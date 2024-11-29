@@ -32,6 +32,7 @@ const config = {
           DEFAULT: '#624CF5',
           foreground: 'hsl(var(--primary-foreground))',
         },
+        about_primary: "#624CF5",
         coral: {
           500: '#15BF59',
         },
@@ -63,6 +64,7 @@ const config = {
       backgroundImage: {
         'dotted-pattern': "url('/assets/images/dotted-pattern.png')",
         'hero-img': "url('/assets/images/hero.png')",
+        'teams-bg': "url('/assets/images/teams_bg.webp')",
       },
       keyframes: {
         "accordion-down": {
@@ -80,7 +82,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require('@tailwindcss/aspect-ratio'),],
 } satisfies Config;
 
 export default config;

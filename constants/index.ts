@@ -39,6 +39,10 @@ export const headerLinks = [
     label: 'About',
     route: '/about',
   },
+  {
+    label: 'Memories',
+    route: '/memories',
+  },
 ];
 
 
