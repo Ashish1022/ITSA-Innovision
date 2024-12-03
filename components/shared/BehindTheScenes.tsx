@@ -1,16 +1,16 @@
 "use client"
 
 import React from 'react'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-interface BehindTheScenesProps{
+interface BehindTheScenesProps {
     title: string;
     description: string;
     img: string;
 }
 
-const BehindTheScenes = ({title, description, img}: BehindTheScenesProps) => {
+const BehindTheScenes = ({ title, description, img }: BehindTheScenesProps) => {
     return (
         <motion.div
             className="space-y-6"
@@ -33,6 +33,7 @@ const BehindTheScenes = ({title, description, img}: BehindTheScenesProps) => {
                     layout="fill"
                     objectFit="cover"
                     className="rounded-lg shadow-lg border-4 border-primary-500"
+                    loading="lazy"
                 />
             </motion.div>
         </motion.div>

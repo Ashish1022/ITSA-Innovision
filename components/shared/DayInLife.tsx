@@ -34,6 +34,7 @@ const DayInLife = ({title, description, img}:DayInLifeProps) => {
                     layout="fill"
                     objectFit="cover"
                     className="rounded-lg shadow-lg border-4 border-primary-500"
+                    loading="lazy"
                 />
             </motion.div>
         </motion.div>

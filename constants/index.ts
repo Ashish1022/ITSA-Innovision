@@ -40,8 +40,8 @@ export const headerLinks = [
     route: '/about',
   },
   {
-    label: 'Memories',
-    route: '/memories',
+    label: 'Gallery',
+    route: '/gallery',
   },
 ];
 
@@ -190,3 +190,20 @@ export const carousel = [
     img: '/assets/images/faculty_collab.png'
   },
 ]
+
+
+export const images = [
+  { id: 1, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
+  { id: 2, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
+  { id: 3, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
+  { id: 4, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
+  { id: 5, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
+  { id: 6, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
+  { id: 7, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
+  { id: 8, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
+  { id: 9, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
+  { id: 10, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
+  { id: 11, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
+  { id: 12, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
+  // Add more images...
+];

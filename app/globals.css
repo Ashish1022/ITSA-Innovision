@@ -530,3 +530,8 @@ body {
   width: 35%;
   height: 35%;
 }
+
+
+.break-inside-avoid {
+  break-inside: avoid;
+}
