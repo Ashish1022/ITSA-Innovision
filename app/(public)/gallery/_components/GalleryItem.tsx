@@ -1,3 +1,4 @@
+
 interface GalleryItemProps {
   image: {
     id: number;
@@ -9,6 +10,8 @@ interface GalleryItemProps {
 }
 
 const GalleryItem: React.FC<GalleryItemProps> = ({ image, index }) => {
+
+
   const borderColors = ["border-yellow-500", "border-pink-500", "border-orange-1"];
   return (
     <div className={`relative overflow-hidden rounded-lg group shadow-md border-4 ${

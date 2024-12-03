@@ -1,6 +1,6 @@
 "use client"
 
-// import Transition from '@/components/shared/Transition'
+import Transition from '@/components/shared/Transition'
 import React from 'react'
 import { motion } from 'framer-motion';
 import { Separator } from '@/components/ui/separator';
@@ -12,7 +12,7 @@ import DayInLife from '@/components/shared/DayInLife';
 const Home = () => {
   return (
     <>
-      {/* <Transition /> */}
+      <Transition />
       <section className="bg-[#f5f7ff] text-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col-reverse lg:flex-row items-center gap-12 z-10">
           {/* Left Content */}
