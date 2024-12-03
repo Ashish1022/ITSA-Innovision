@@ -4,10 +4,10 @@ import Transition from '@/components/shared/Transition'
 import React from 'react'
 import { motion } from 'framer-motion';
 import { Separator } from '@/components/ui/separator';
-import EmblaCarousel from '@/components/shared/EmblaCarousel';
 import BehindTheScenes from '@/components/shared/BehindTheScenes';
 import FactCard from '@/components/shared/FactCard';
 import DayInLife from '@/components/shared/DayInLife';
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -51,11 +51,17 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <motion.div
-              className="relative overflow-hidden rounded-lg shadow-xl transition-transform transform hover:scale-105 border-2 border-primary-500 bg-teams-bg"
+              className="relative overflow-hidden rounded-lg shadow-xl transition-transform transform hover:scale-105 border-2 border-primary-500"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <EmblaCarousel />
+              <Image
+                src="/assets/teams/itsa.webp"
+                alt="Students Celebrating"
+                width={500}
+                height={500}
+                className='mx-auto'
+              />
             </motion.div>
           </motion.div>
         </div>
