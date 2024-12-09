@@ -73,9 +73,7 @@ const page = ({ params }: { params: { eventId: Id<"events"> } }) => {
                 </div>
               </div>
               <div className="flex flex-col gap-2">
-               
                 <p className="p-medium-16 lg:p-regular-18">{event?.eventDescription}</p>
-                
               </div>
             </div>
           </div>
