@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaStar, FaHeart, FaFire } from 'react-icons/fa';
@@ -25,7 +27,7 @@ const events: Event[] = [
     title: "STUDENT FESTIVAL",
     description: "An unforgettable cultural experience.",
     icon: <FaHeart />,
-    image: "/assets/images/festival.webp",
+    image: "/assets/images/human_ludo.webp",
     color: "bg-blue-300",
   },
   {
@@ -33,7 +35,7 @@ const events: Event[] = [
     title: "SPORTS DAY",
     description: "Bringing out the competitive spirit.",
     icon: <FaFire />,
-    image: "/assets/images/sports_day.webp",
+    image: "/assets/images/human_ludo.webp",
     color: "bg-green-300",
   },
   {
@@ -41,7 +43,7 @@ const events: Event[] = [
     title: "ECO CAMPAIGN",
     description: "Promoting sustainability in our college.",
     icon: <FaHeart />,
-    image: "/assets/images/eco_campaign.webp",
+    image: "/assets/images/human_ludo.webp",
     color: "bg-yellow-300",
   },
   // Add more events as needed
@@ -66,7 +68,7 @@ const Timeline = () => {
   };
 
   return (
-    <div className="relative max-w-7xl mx-auto py-10 px-4 sm:px-0">
+    <div className="relative max-w-7xl mx-auto px-4 sm:px-0">
       <div className="absolute h-full border-l-4 border-[#624CF5] md:left-1/2" />
       {events.map((event, index) => (
         <motion.div
