@@ -33,14 +33,6 @@ const Home = () => {
             >
               We are a team of passionate students who work together to make college life fun, inspiring, and full of exciting opportunities. Join us in making a difference every day!
             </motion.p>
-            <motion.p
-              className="text-md sm:text-lg text-white/70 italic"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.9 }}
-            >
-              “We believe every student’s voice matters, and we’re here to amplify it.”
-            </motion.p>
           </motion.div>
 
           {/* Right Content */}
