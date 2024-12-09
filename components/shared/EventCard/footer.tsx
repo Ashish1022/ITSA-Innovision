@@ -23,11 +23,11 @@ const Footer = ({ title, ownerLabel, reviews, seller }: FooterProps) => {
             <p className="text-[14px] font-medium max-w-[calc(100%-20px)]">
                 {title}
             </p>
-            <div className="flex gap-x-1.5 text-md font-normal">
+            {/* <div className="flex gap-x-1.5 text-md font-normal">
                 <Star className="font-semibold" />
-                <p className="font-semibold">{reviews.length}</p>
+                <p className="font-semibold">23</p>
                 (<p className="underline">{averageReview}</p>)
-            </div>
+            </div> */}
             <p className="opacity-0 group-hover:opacity-100 transition-opacity text-[11px] text-muted-foreground truncate">
                 {ownerLabel}
             </p>
