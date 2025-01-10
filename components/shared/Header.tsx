@@ -10,7 +10,7 @@ const Header = () => {
       <div className="wrapper flex items-center justify-between">
         <Link href="/" className="w-36">
           <Image
-            src="/assets/images/innovision.svg" width={600} height={308}
+            src="/assets/images/logo.png" width={200} height={200}
             alt="innovision"
           />
         </Link>
