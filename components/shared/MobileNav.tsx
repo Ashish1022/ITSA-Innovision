@@ -36,7 +36,7 @@ const MobileNav: React.FC = () => {
         >
           <SheetTitle>
             <Image
-              src="/assets/images/innovision.svg"
+              src="/assets/images/logo.png"
               alt="logo"
               width={128}
               height={38}
