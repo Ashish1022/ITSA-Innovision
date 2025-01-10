@@ -48,8 +48,8 @@ const Home = () => {
               <Image
                 src="/assets/images/main.png"
                 alt="Students Celebrating"
-                width={700}
-                height={700}
+                width={900}
+                height={900}
                 className='mx-auto'
               />
             </motion.div>
