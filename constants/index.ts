@@ -25,10 +25,6 @@ export const headerLinks = [
     route: '/teams',
   },
   {
-    label: 'About',
-    route: '/about',
-  },
-  {
     label: 'Gallery',
     route: '/gallery',
   },
