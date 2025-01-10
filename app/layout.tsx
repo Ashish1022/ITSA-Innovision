@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className="overflow-auto scrollbar-hide">
       <ConvexClerkProvider>
         <body className={poppins.variable}>
-          <ThemeProvider attribute='class' defaultTheme="system" enableSystem>
+          <ThemeProvider attribute='class' defaultTheme="dark" enableSystem>
           {children}
           <Toaster/>
           <Analytics/>
