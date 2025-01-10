@@ -46,7 +46,7 @@ const Home = () => {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/assets/teams/itsa.webp"
+                src="/assets/images/main.png"
                 alt="Students Celebrating"
                 width={500}
                 height={500}
