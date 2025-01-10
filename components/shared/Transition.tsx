@@ -8,7 +8,7 @@ const Transition = () => {
     <>
       {/* Primary Layer */}
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-primary-500"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#11daff]"
         initial={{ x: "100%", width: "100%" }}
         animate={{ x: "0%", width: "0%" }}
         exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
@@ -16,7 +16,7 @@ const Transition = () => {
       />
       {/* Orange Layer */}
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-orange-1"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-white-1"
         initial={{ x: "100%", width: "100%" }}
         animate={{ x: "0%", width: "0%" }}
         exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
