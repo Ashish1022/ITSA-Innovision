@@ -5,7 +5,7 @@ import { Poppins } from 'next/font/google'
 import ConvexClerkProvider from "@/providers/ConvexClerkProvider";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react"
-import { ThemeProvider } from "@/providers/theme-provider";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,11 +29,11 @@ export default function RootLayout({
     <html lang="en" className="overflow-auto scrollbar-hide">
       <ConvexClerkProvider>
         <body className={poppins.variable}>
-          <ThemeProvider attribute='class' defaultTheme="dark" enableSystem>
+
           {children}
           <Toaster/>
           <Analytics/>
-          </ThemeProvider>
+
         </body>
       </ConvexClerkProvider>
     </html>
