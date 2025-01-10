@@ -117,15 +117,15 @@ export const teams: Team[] = [
 
 export const carousel = [
   {
-    id:1,
+    id: 1,
     img: '/assets/teams/itsa.webp'
   },
   {
-    id:2,
+    id: 2,
     img: '/assets/teams/team.webp'
   },
   {
-    id:3,
+    id: 3,
     img: '/assets/images/faculty_collab.png'
   },
 ]
@@ -146,3 +146,26 @@ export const images = [
   { id: 12, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
   // Add more images...
 ];
+
+export const about = [
+  { name: "Gold", symbol: "☉", description: "The perfection of all matter, symbolizing the Sun." }, 
+  { name: "Silver", symbol: "☽", description: "The Moon, representing purity and clarity." }, 
+  { name: "Mercury", symbol: "☿", description: "Fluidity, transformation, and duality." }, 
+  { name: "Lead", symbol: "♄", description: "Base matter, representing Saturn and mortality." }, 
+  { name: "Copper", symbol: "♀", description: "Associated with Venus, representing love and balance." },
+  { name: "Iron", symbol: "♂", description: "Associated with Mars, symbolizing strength and courage." }, 
+   { name: "Tin", symbol: "♃", description: "Associated with Jupiter, symbolizing wisdom and expansion." }, 
+   { name: "Antimony", symbol: "🜛", description: "Symbolizing the wild and untamed aspect of matter." }, 
+   { name: "Sulfur", symbol: "🜍", description: "Representing the soul and combustion." }, 
+   { name: "Salt", symbol: "🜔", description: "Symbolizing the body and crystallization." }, 
+   { name: "Earth", symbol: "🜃", description: "The element of stability and groundedness." }, 
+   { name: "Water", symbol: "🜄", description: "The element of emotion, intuition, and fluidity." }, 
+   { name: "Air", symbol: "🜁", description: "The element of intellect and communication." }, 
+   { name: "Fire", symbol: "🜂", description: "The element of energy, passion, and transformation." }, 
+   { name: "Philosopher's Stone", symbol: "🜓", description: "A mythical substance symbolizing ultimate perfection." },
+    { name: "Arsenic", symbol: "🜺", description: "A symbol representing transformation and volatility." }, 
+    { name: "Vitriol", symbol: "🜖", description: "Representing purification through internal discovery." },
+     { name: "Amalgam", symbol: "🝛", description: "A mixture or blend, symbolizing unity and harmony." }, 
+     { name: "Aqua Regia", symbol: "🜆", description: "A potent solvent capable of dissolving gold, symbolizing power." }, 
+     { name: "Ethereal Fire", symbol: "🜎", description: "A mystical flame representing divine energy and spiritual transformation." }
+]
