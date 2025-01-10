@@ -60,10 +60,6 @@ const AboutPage = () => {
             </div>
           </div>
         </section>
-
-        {/* Enhanced Timeline Section */}
-        <Timeline />
-
       </div>
     </>
   );

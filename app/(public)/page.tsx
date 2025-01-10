@@ -5,8 +5,6 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { Separator } from '@/components/ui/separator';
 import BehindTheScenes from '@/components/shared/BehindTheScenes';
-import FactCard from '@/components/shared/FactCard';
-import DayInLife from '@/components/shared/DayInLife';
 import Image from 'next/image';
 
 const Home = () => {
@@ -89,8 +87,7 @@ const Home = () => {
           </div>
         </motion.div>
         <Separator className="border border-primary-500" />
-        {/* A Day in the Life of a Council Member */}
-        
+      
       </section>
 
       <Separator className="border border-primary-500" />
