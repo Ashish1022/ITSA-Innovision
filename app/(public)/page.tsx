@@ -90,47 +90,7 @@ const Home = () => {
         </motion.div>
         <Separator className="border border-primary-500" />
         {/* A Day in the Life of a Council Member */}
-        <motion.div
-          className="py-20 bg-[#f5f7ff]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-        >
-          <div className="max-w-7xl mx-auto px-6 text-center space-y-12">
-            <h3 className="text-2xl font-semibold text-[#624CF5]">A Day in the Life of a Council Member</h3>
-            <p className="text-lg text-gray-600">
-              Ever wondered what it’s like to be a part of the Student Council? Here’s a sneak peek into a typical day:
-            </p>
-            <div className="flex flex-col md:flex-row gap-16 mt-12">
-
-              {/* Morning: Team Meeting */}
-
-              <DayInLife title="Morning: Team Meeting" description="We start the day with a team meeting to discuss the ongoing projects, upcoming events, and any ideas we have for the college." img="/assets/teams/team.webp" />
-
-              {/* Late Morning: Planning & Strategy */}
-
-              <DayInLife title="Late Morning: Planning & Strategy" description="After the meeting, we break into smaller groups to strategize the best ways to approach our upcoming events. This is where the real work happens." img="/assets/teams/team.webp" />
-
-              {/* Afternoon: Event Planning */}
-
-              <DayInLife title="Afternoon: Event Planning" description="After planning, we move on to event logistics: coordinating with teachers, setting up venues, and organizing volunteers to ensure everything goes smoothly." img="/assets/teams/team.webp" />
-
-            </div>
-
-            <div className="flex flex-col md:flex-row gap-16 mt-12">
-
-              {/* Evening: Reflecting and Wrapping Up */}
-
-              <DayInLife title="Evening: Reflecting and Wrapping Up" description="At the end of the day, we gather together to reflect on what went well and what we can improve on. It's also when we wrap up any loose ends." img="/assets/teams/team.webp" />
-
-              {/* Night: Social Media Updates or Preparation for Tomorrow */}
-
-              <DayInLife title="Night: Social Media Updates or Preparation for Tomorrow" description="At night, we update our social media accounts with event highlights, or prepare for the next day by finalizing plans and communicating with others." img="/assets/teams/team.webp" />
-
-            </div>
-          </div>
-
-        </motion.div>
+        
       </section>
 
       <Separator className="border border-primary-500" />
