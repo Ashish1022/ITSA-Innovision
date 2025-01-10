@@ -23,7 +23,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-white drop-shadow-md">
-              Meet the Student Council
+              Meet the Community.
             </h1>
             <motion.p
               className="text-lg sm:text-xl text-white/90"
@@ -133,38 +133,6 @@ const Home = () => {
         </motion.div>
       </section>
 
-      <Separator className="border border-primary-500" />
-
-      <section className="bg-gradient-to-r from-[#e9ebf3] via-[#f1f5fb] to-[#ffffff] py-16 text-center">
-        <div className="max-w-7xl mx-auto px-6">
-          <h3
-            className="text-4xl font-bold text-[#624CF5] mb-8"
-          >
-            Did You Know?
-          </h3>
-
-          <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-          >
-
-
-            <FactCard title='I’ll Just Wing It' description='The student council motto: "We have no idea what we’re doing, but we’ll do it with enthusiasm and pretend we’ve got it all under control!"' />
-
-
-            <FactCard title='The Budget Dilemma' description='Managing a student council budget is like trying to buy a yacht with the funds for a pizza party. You’ll spend hours debating whether to splurge on decorations or get enough snacks for everyone.' />
-
-
-            <FactCard title='Mini Government' description='The student council is often structured similarly to a government. It has a president, vice president, treasurer, and representatives, and sometimes even committees for various tasks like social events, community outreach.' />
-
-
-            <FactCard title="It's Not All Glamorous" description='While it may seem glamorous to be a student council president, the role often involves a lot of behind-the-scenes work—handling budgets, and organizing endless meetings.' />
-
-          </motion.div>
-        </div>
-      </section>
       <Separator className="border border-primary-500" />
     </>
   )
