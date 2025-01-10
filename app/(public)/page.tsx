@@ -15,7 +15,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col-reverse lg:flex-row items-center gap-12 z-10">
           {/* Left Content */}
           <motion.div
-            className="lg:w-1/2 space-y-6"
+            className="lg:w-[40%] space-y-6"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -35,7 +35,7 @@ const Home = () => {
 
           {/* Right Content */}
           <motion.div
-            className="lg:w-1/2 relative"
+            className="lg:w-[60%] relative"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
