@@ -20,7 +20,7 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-white drop-shadow-md">
+            <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight text-white drop-shadow-md">
               Meet the Community.
             </h1>
             <motion.p
