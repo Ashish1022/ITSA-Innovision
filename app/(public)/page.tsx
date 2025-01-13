@@ -23,14 +23,18 @@ const Home = () => {
             <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight text-white drop-shadow-md">
               Meet the Community.
             </h1>
-            <motion.p
-              className="text-lg sm:text-xl text-white/90"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.6 }}
-            >
-              We are a team of passionate students who work together to make college life fun, inspiring, and full of exciting opportunities. Join us in making a difference every day!
-            </motion.p>
+            <div className='flex items-center gap-4'>
+              <Button asChild className="rounded-full md:absolute md:right-8 max-md:w-full" size="lg">
+                <Link href='/events'>
+                  Register
+                </Link>
+              </Button>
+              <Button asChild className="rounded-full md:absolute md:right-8 max-md:w-full" size="lg">
+                <Link href='/gallery'>
+                  Explore
+                </Link>
+              </Button>
+            </div>
           </motion.div>
 
           {/* Right Content */}
@@ -87,7 +91,7 @@ const Home = () => {
           </div>
         </motion.div>
         <Separator className="border border-primary-500" />
-      
+
       </section>
 
       <Separator className="border border-primary-500" />
