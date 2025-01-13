@@ -37,13 +37,13 @@ export const teams: Team[] = [
     name: "Cultural Team",
     head: {
       name: "Head",
-      image: "/assets/teams/cultural_head.heic",
+      image: "/assets/teams/culturalhead.jpeg",
       description: "Leads all cultural activities.",
     },
     members: [
       {
         name: "Member",
-        image: "/assets/teams/cultural_team.heic",
+        image: "/assets/teams/culturalteam.jpeg",
         description: "In charge of cultural events.",
       },
     ],
@@ -52,13 +52,13 @@ export const teams: Team[] = [
     name: "Creative Team",
     head: {
       name: "Head",
-      image: "/assets/teams/creative_head.heic",
+      image: "/assets/teams/creativehead.jpeg",
       description: "Manages all creative events.",
     },
     members: [
       {
         name: "Member",
-        image: "/assets/teams/creative_team.heic",
+        image: "/assets/teams/creativeteam.jpeg",
         description: "In charge of creative events.",
       },
     ],
@@ -67,44 +67,74 @@ export const teams: Team[] = [
     name: "Technical Team",
     head: {
       name: "Head",
-      image: "/assets/teams/tech_head.heic",
+      image: "/assets/teams/techhead.jpeg",
       description: "Manages all technical events.",
     },
     members: [
       {
         name: "Member",
-        image: "/assets/teams/tech_team.heic",
+        image: "/assets/teams/technicalteam.jpeg",
         description: "In charge of technical events.",
       },
     ],
   },
   {
-    name: "Sponsors Team",
+    name: "PR and Sponsors Team",
     head: {
       name: "Head",
-      image: "/assets/teams/sponsor_head.heic",
+      image: "/assets/teams/sposnhead.jpeg",
       description: "Manages all sponosors.",
     },
     members: [
       {
         name: "Member",
-        image: "/assets/teams/sponsorship_team.heic",
+        image: "/assets/teams/prsponsorteam.jpeg",
         description: "In charge of sponsorships.",
       },
     ],
   },
   {
-    name: "PR Team",
+    name: "Social Media Team",
     head: {
       name: "Head",
-      image: "/assets/teams/pr_head.heic",
-      description: "Manages the PR department.",
+      image: "/assets/teams/socailhead",
+      description: "Manages all sponosors.",
     },
     members: [
       {
         name: "Member",
-        image: "/assets/teams/pr_team.heic",
-        description: "In charge of PR.",
+        image: "/assets/teams/socialmediateam.jpeg",
+        description: "In charge of sponsorships.",
+      },
+    ],
+  },
+  {
+    name: "Graphic Design Team",
+    head: {
+      name: "Head",
+      image: "/assets/teams/gdhead.jpeg",
+      description: "Manages all sponosors.",
+    },
+    members: [
+      {
+        name: "Member",
+        image: "/assets/teams/gdteam.jpeg",
+        description: "In charge of sponsorships.",
+      },
+    ],
+  },
+  {
+    name: "Editorial Team",
+    head: {
+      name: "Head",
+      image: "/assets/teams/editorialhead",
+      description: "Manages all sponosors.",
+    },
+    members: [
+      {
+        name: "Member",
+        image: "/assets/teams/editorialteam.jpeg",
+        description: "In charge of sponsorships.",
       },
     ],
   },
@@ -128,11 +158,11 @@ export const carousel = [
 
 
 export const images = [
-  { id: 1, src: "/assets/gallery/memories/memories1.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra Pooja" },
-  { id: 2, src: "/assets/gallery/memories/memories2.jpeg", alt: "Photo 1", category: "Memories", title: "Industrial Visit" },
-  { id: 3, src: "/assets/gallery/memories/memories3.jpeg", alt: "Photo 1", category: "Memories", title: "Photobooth" },
-  { id: 4, src: "/assets/gallery/memories/memories4.jpeg", alt: "Photo 1", category: "Memories", title: "Dart Throw" },
-  { id: 5, src: "/assets/gallery/memories/memories5.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra" },
+  // { id: 1, src: "/assets/gallery/memories/memories1.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra Pooja" },
+  // { id: 2, src: "/assets/gallery/memories/memories2.jpeg", alt: "Photo 1", category: "Memories", title: "Industrial Visit" },
+  // { id: 3, src: "/assets/gallery/memories/memories3.jpeg", alt: "Photo 1", category: "Memories", title: "Photobooth" },
+  // { id: 4, src: "/assets/gallery/memories/memories4.jpeg", alt: "Photo 1", category: "Memories", title: "Dart Throw" },
+  // { id: 5, src: "/assets/gallery/memories/memories5.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra" },
   // Add more images...
 ];
 
