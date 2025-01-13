@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { Separator } from '@/components/ui/separator';
 import BehindTheScenes from '@/components/shared/BehindTheScenes';
 import Image from 'next/image';
-
+import { Button } from '@/components/ui/button';
 const Home = () => {
   return (
     <>
