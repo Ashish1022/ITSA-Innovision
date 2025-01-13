@@ -30,7 +30,7 @@ const Home = () => {
                   Register
                 </Link>
               </Button>
-              <Button asChild className="rounded-full  max-md:w-full bg-grey-500/10 border border-primary-500" size="lg">
+              <Button asChild className="rounded-full  max-md:w-full bg-grey-500/10 border border-primary-500 text-black-1" size="lg">
                 <Link href='/gallery'>
                   Explore
                 </Link>
