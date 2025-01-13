@@ -12,11 +12,10 @@ interface GalleryItemProps {
 
 const GalleryItem: React.FC<GalleryItemProps> = ({ image, index }) => {
 
-
   const borderColors = ["border-yellow-500", "border-pink-500", "border-orange-1", "border-red-500", "border-primary-500"];
   return (
      <div
-      className={`relative group overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 border-4 ${
+      className={`relative group-hover:backdrop-blur-sm group overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 border-4 ${
         borderColors[index % borderColors.length]
       }`}
     >

@@ -62,6 +62,8 @@ const formSchema = z.object({
     price: z.string(),
 
     isFree: z.boolean(),
+
+    eventType: z.boolean(),
 })
 
 const EventForm = ({ type }: EventFormProps) => {
@@ -81,7 +83,8 @@ const EventForm = ({ type }: EventFormProps) => {
             eventDescription: "",
             eventLocation: "",
             price: "",
-            isFree: false
+            isFree: false,
+            eventType: false,
         },
     })
 
@@ -104,7 +107,8 @@ const EventForm = ({ type }: EventFormProps) => {
                 startDateTime: data.startDateTime.toString(),
                 endDateTime: data.endDateTime.toString(),
                 price: data.price,
-                isFree: data.isFree
+                isFree: data.isFree,
+                eventType: data.eventType
             })
             toast({ title: "Congratulations!! Event created" })
             setIsSubmitting(false)
@@ -323,6 +327,25 @@ const EventForm = ({ type }: EventFormProps) => {
                                             )}
                                         />
                                     </div>
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+                    <FormField
+                        control={form.control}
+                        name="eventType"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormControl>
+                                    <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-gray-200 px-4 py-2">
+                                        <label htmlFor="eventType" className="whitespace-nowrap pr-3 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Upcoming event</label>
+                                        <Checkbox
+                                            onCheckedChange={field.onChange}
+                                            checked={field.value}
+                                            id="eventType" className="mr-2 h-5 w-5 border-2 border-primary-500" />
+                                    </div>
+
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
