@@ -10,3 +10,13 @@ export interface Team {
     head: Member;
     members: Member[];
 }
+
+
+export interface Event {
+    date: string;
+    title: string;
+    description: string;
+  
+    image: string;
+    color: string;
+  }

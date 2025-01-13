@@ -1,4 +1,4 @@
-import { Team } from "@/types";
+import { Event, Team } from "@/types";
 
 export const adminHeaderLinks = [
   {
@@ -34,6 +34,38 @@ export const headerLinks = [
   },
 ];
 
+
+export const events: Event[] = [
+  {
+    date: "2023-03-19",
+    title: "INNOVISION 2023",
+    description: "Celebrated the new year.",
+    image: "/assets/images/human_ludo.webp",
+    color: "bg-red-300",
+  },
+  {
+    date: "2023-03-20",
+    title: "STUDENT FESTIVAL",
+    description: "An unforgettable cultural experience.",
+    image: "/assets/images/human_ludo.webp",
+    color: "bg-blue-300",
+  },
+  {
+    date: "2023-04-15",
+    title: "SPORTS DAY",
+    description: "Bringing out the competitive spirit.",
+    image: "/assets/images/human_ludo.webp",
+    color: "bg-green-300",
+  },
+  {
+    date: "2023-05-10",
+    title: "ECO CAMPAIGN",
+    description: "Promoting sustainability in our college.",
+    image: "/assets/images/human_ludo.webp",
+    color: "bg-yellow-300",
+  },
+  // Add more events as needed
+];
 
 
 export const teams: Team[] = [
@@ -117,15 +149,15 @@ export const teams: Team[] = [
 
 export const carousel = [
   {
-    id:1,
+    id: 1,
     img: '/assets/teams/itsa.webp'
   },
   {
-    id:2,
+    id: 2,
     img: '/assets/teams/team.webp'
   },
   {
-    id:3,
+    id: 3,
     img: '/assets/images/faculty_collab.png'
   },
 ]
