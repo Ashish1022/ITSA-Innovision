@@ -79,7 +79,7 @@ export const teams: Team[] = [
     ],
   },
   {
-    name: "PR and Sponsors Team",
+    name: "Sponsors Team",
     head: {
       name: "Head",
       image: "/assets/teams/sposnhead.jpeg",
@@ -97,7 +97,7 @@ export const teams: Team[] = [
     name: "Social Media Team",
     head: {
       name: "Head",
-      image: "/assets/teams/socailhead",
+      image: "/assets/teams/socailhead.jpeg",
       description: "Manages all sponosors.",
     },
     members: [
@@ -127,13 +127,28 @@ export const teams: Team[] = [
     name: "Editorial Team",
     head: {
       name: "Head",
-      image: "/assets/teams/editorialhead",
+      image: "/assets/teams/editorialhead.jpeg",
       description: "Manages all sponosors.",
     },
     members: [
       {
         name: "Member",
         image: "/assets/teams/editorialteam.jpeg",
+        description: "In charge of sponsorships.",
+      },
+    ],
+  },
+  {
+    name: "Public Relation Team",
+    head: {
+      name: "Head",
+      image: "/assets/teams/prteam.jpeg",
+      description: "Manages all sponosors.",
+    },
+    members: [
+      {
+        name: "Member",
+        image: "/assets/teams/prsponsorteam.jpeg",
         description: "In charge of sponsorships.",
       },
     ],
