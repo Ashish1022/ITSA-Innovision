@@ -16,7 +16,7 @@ const Footer = () => {
         </Link>
         <p>2024 ITSA. All Rights reserved by 
           <Link href='https://ashishport.vercel.app/' target={'_blank'} className="text-primary-500">
-            ZERO
+            &nbsp;ZERO
           </Link>
         </p>
       </div>
