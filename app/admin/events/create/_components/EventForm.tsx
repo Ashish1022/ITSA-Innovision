@@ -338,7 +338,7 @@ const EventForm = ({ type }: EventFormProps) => {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <div className="flex items-center">
+                                    <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-gray-200 px-4 py-2">
                                         <label htmlFor="eventType" className="whitespace-nowrap pr-3 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Upcoming event</label>
                                         <Checkbox
                                             onCheckedChange={field.onChange}
