@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator';
 import BehindTheScenes from '@/components/shared/BehindTheScenes';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 const Home = () => {
   return (
     <>
