@@ -14,7 +14,11 @@ const Footer = () => {
             height={38}
           />
         </Link>
-        <p>2024 ITSA. All Rights reserved.</p>
+        <p>2024 ITSA. All Rights reserved by 
+          <Link href='https://ashishport.vercel.app/' target={'_blank'} className="text-primary-500">
+            ZERO
+          </Link>
+        </p>
       </div>
     </footer>
   )

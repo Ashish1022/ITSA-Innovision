@@ -128,18 +128,10 @@ export const carousel = [
 
 
 export const images = [
-  { id: 1, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
-  { id: 2, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
-  { id: 3, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
-  { id: 4, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
-  { id: 5, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
-  { id: 6, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
-  { id: 7, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
-  { id: 8, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
-  { id: 9, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
-  { id: 10, src: "/assets/teams/itsa.webp", alt: "Photo 1", category: "Portraits", title: "Sunlit Smile" },
-  { id: 11, src: "/assets/teams/itsa.webp", alt: "Photo 2", category: "Landscapes", title: "Mountain Majesty" },
-  { id: 12, src: "/assets/teams/itsa.webp", alt: "Photo 3", category: "Events", title: "Festival Vibes" },
+  { id: 1, src: "/assets/gallery/memories/memories1.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra Pooja" },
+  { id: 2, src: "/assets/gallery/memories/memories2.jpeg", alt: "Photo 1", category: "Memories", title: "Industrial Visit" },
+  { id: 2, src: "/assets/gallery/memories/memories3.jpeg", alt: "Photo 1", category: "Memories", title: "Photobooth" },
+  { id: 2, src: "/assets/gallery/memories/memories3.jpeg", alt: "Photo 1", category: "Memories", title: "Photobooth" },
   // Add more images...
 ];
 
