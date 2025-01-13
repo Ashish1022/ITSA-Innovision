@@ -25,12 +25,12 @@ const Home = () => {
               Meet the Community.
             </h1>
             <div className='flex items-center gap-4'>
-              <Button asChild className="rounded-full md:absolute md:right-8 max-md:w-full" size="lg">
+              <Button asChild className="rounded-full max-md:w-full" size="lg">
                 <Link href='/events'>
                   Register
                 </Link>
               </Button>
-              <Button asChild className="rounded-full md:absolute md:right-8 max-md:w-full" size="lg">
+              <Button asChild className="rounded-full  max-md:w-full" size="lg">
                 <Link href='/gallery'>
                   Explore
                 </Link>
