@@ -12,7 +12,6 @@ interface GalleryItemProps {
 
 const GalleryItem: React.FC<GalleryItemProps> = ({ image, index }) => {
 
-
   const borderColors = ["border-yellow-500", "border-pink-500", "border-orange-1", "border-red-500", "border-primary-500"];
   return (
      <div
