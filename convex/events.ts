@@ -16,6 +16,7 @@ export const createEvent = mutation({
         endDateTime: v.string(),
         price: v.string(),
         isFree: v.boolean(),
+        eventType: v.boolean(),
     },
     handler: async (ctx, args) => {
         return await ctx.db.insert("events", {
@@ -27,7 +28,8 @@ export const createEvent = mutation({
             startDateTime: args.startDateTime,
             endDateTime: args.endDateTime,
             price: args.price,
-            isFree: args.isFree
+            isFree: args.isFree,
+            eventType: args.eventType
         })
     }
 })
@@ -46,6 +48,17 @@ export const getAllEvents = query({
         return await ctx.db.query("events").order("desc").collect();
     },
 });
+
+export const getUpcomingEvnts = query({
+    args: {
+        eventId: v.id("events")
+    },
+    handler: async (ctx, args) => {
+        const event = await ctx.db.get(args.eventId);
+        return await ctx.db.query("events").filter((q) => q.and(q.eq(q.field("eventType"), event?.eventType), q.neq(q.field("_id"), args.eventId))
+        ).collect();
+    }
+})
 
 export const getEventById = query({
     args: {
