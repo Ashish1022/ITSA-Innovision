@@ -23,7 +23,7 @@ const NavItems = ({onLinkClick}:NavItemsProps) => {
           return (
             <li
               key={link.route}
-              className={`${isActive && 'text-primary-500'
+              className={`${isActive ? 'text-primary-500':'text-white-1'
                 } flex-center p-medium-16 whitespace-nowrap`}
             >
               <Link href={link.route} onClick={onLinkClick}>{link.label}</Link>
@@ -36,7 +36,7 @@ const NavItems = ({onLinkClick}:NavItemsProps) => {
         return (
           <li
             key={link.route}
-            className={`${isActive && 'text-primary-500'
+            className={`${isActive ? 'text-primary-500' : 'text-white-1'
               } flex-center p-medium-16 whitespace-nowrap`}
           >
             <Link href={link.route} onClick={onLinkClick}>{link.label}</Link>

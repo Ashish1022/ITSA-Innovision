@@ -8,6 +8,7 @@ export default defineSchema({
         eventDescription: v.string(),
         location: v.string(),
         eventType: v.boolean(),
+        url: v.string(),
 
         imageUrl: v.string(),
         imageStorageId: v.optional(v.id("_storage")),

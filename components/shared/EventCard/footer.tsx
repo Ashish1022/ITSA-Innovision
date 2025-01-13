@@ -1,25 +1,32 @@
-import { Doc } from '@/convex/_generated/dataModel';
-import { Star } from 'lucide-react';
+"use client"
+
+import { Button } from '@/components/ui/button';
+import { api } from '@/convex/_generated/api';
+import { Id } from '@/convex/_generated/dataModel';
+import { useQuery } from 'convex/react';
+import { IndianRupee } from 'lucide-react';
+import Link from 'next/link';
+
 import React from 'react'
 
 interface FooterProps {
     title: string;
     ownerLabel: string;
     reviews: string;
-    // reviews: Doc<"reviews">[] | string;
-    // seller: Doc<"users">;
     seller: string;
+    eventId: Id<"events">;
 };
 
-const Footer = ({ title, ownerLabel, reviews, seller }: FooterProps) => {
+const Footer = ({ title, ownerLabel, reviews, seller, eventId }: FooterProps) => {
 
-    // let averageReview: number = reviews.length > 0 ? reviews.reduce((acc, review) => acc + review.communication_level + review.recommend_to_a_friend + review.service_as_described, 0) / (reviews.length * 3) : 0;
-
-    let averageReview = 5;
+    const event = useQuery(api.events.getEventById, { eventId });
+    const handleClick = () => {
+        window.open(event?.url);
+    };
 
     return (
-        <div className="relative bg-white-1 p-3 space-y-2">
-            <h3 className="font-bold">"ITSA Innovision"</h3>
+        <div className="relative bg-[#acbcf7] p-3 space-y-6 ">
+            {/* <h3 className="font-bold">"ITSA Innovision"</h3> */}
             <p className="text-[14px] font-medium max-w-[calc(100%-20px)]">
                 {title}
             </p>
@@ -28,9 +35,22 @@ const Footer = ({ title, ownerLabel, reviews, seller }: FooterProps) => {
                 <p className="font-semibold">23</p>
                 (<p className="underline">{averageReview}</p>)
             </div> */}
-            <p className="opacity-0 group-hover:opacity-100 transition-opacity text-[11px] text-muted-foreground truncate">
-                {ownerLabel}
-            </p>
+            <div className='flex flex-col gap-3 items-center space-y-2'>
+                <div className='flex items-center gap-3'>
+                    <p className="p-bold-20 rounded-full bg-green-500/10 px-5 py-2 text-green-700 border-2">
+                        {event?.isFree ? 'FREE' : `Rs. ${event?.price}`}
+                    </p>
+                    <p className="p-medium-16 rounded-full bg-grey-500/10 px-4 py-2.5 text-white-1 border-2">
+                        {event?.eventCategory}
+                    </p>
+                </div>
+                <Button className='w-full' onClick={handleClick}>
+
+                    Register
+
+                </Button>
+            </div>
+
         </div>
     )
 }

@@ -10,7 +10,7 @@ interface FilterBarProps {
     onSelectCategory,
   }) => {
     return (
-      <div className="flex flex-wrap justify-center gap-4 bg-gray-100 sm:flex-row">
+      <div className="flex flex-wrap justify-center gap-4 bg-[#282b30] sm:flex-row">
 
         {categories.map((category) => (
           <button
@@ -18,8 +18,8 @@ interface FilterBarProps {
             onClick={() => onSelectCategory(category)}
             className={`px-4 py-2 rounded-md text-sm font-medium ${
               selectedCategory === category
-                ? "bg-purple-600 text-white"
-                : "bg-white text-gray-800 border border-gray-300 hover:bg-purple-100"
+                ? "bg-primary-500 text-white"
+                : "bg-white text-white-1 border border-gray-300 hover:bg-gray-1"
             } transition-all`}
           >
             {category}

@@ -205,11 +205,11 @@ export const carousel = [
 
 
 export const images = [
-  // { id: 1, src: "/assets/gallery/memories/memories1.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra Pooja" },
-  // { id: 2, src: "/assets/gallery/memories/memories2.jpeg", alt: "Photo 1", category: "Memories", title: "Industrial Visit" },
-  // { id: 3, src: "/assets/gallery/memories/memories3.jpeg", alt: "Photo 1", category: "Memories", title: "Photobooth" },
-  // { id: 4, src: "/assets/gallery/memories/memories4.jpeg", alt: "Photo 1", category: "Memories", title: "Dart Throw" },
-  // { id: 5, src: "/assets/gallery/memories/memories5.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra" },
+  { id: 1, src: "/assets/gallery/memories/memories1.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra Pooja" },
+  { id: 2, src: "/assets/gallery/memories/memories2.jpeg", alt: "Photo 1", category: "Memories", title: "Industrial Visit" },
+  { id: 3, src: "/assets/gallery/memories/memories3.jpeg", alt: "Photo 1", category: "Memories", title: "Photobooth" },
+  { id: 4, src: "/assets/gallery/memories/memories4.jpeg", alt: "Photo 1", category: "Memories", title: "Dart Throw" },
+  { id: 5, src: "/assets/gallery/memories/memories5.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra" },
   // Add more images...
 ];
 

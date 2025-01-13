@@ -4,8 +4,8 @@ import NavItems from "./NavItems"
 
 const Footer = () => {
   return (
-    <footer className="border-t">
-      <div className="flex-center wrapper flex-between flex flex-col gap-4 p-5 text-center sm:flex-row">
+    <footer className="border-t bg-[#1e2124]">
+      <div className="flex-center text-white-1 wrapper flex-between flex flex-col gap-4 p-5 text-center sm:flex-row">
         <Link href='/'>
           <Image
             src="/assets/images/logo.png"

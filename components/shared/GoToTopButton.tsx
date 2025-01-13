@@ -38,7 +38,7 @@ const GoToTopButton: React.FC = () => {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed bottom-4 right-4 z-50 bg-purple-600 p-3 rounded-full shadow-lg transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"
+            className={`fixed bottom-14 right-4 z-50 bg-purple-600 p-3 rounded-full shadow-lg transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"
                 }`}
             aria-label="Go to top"
         >

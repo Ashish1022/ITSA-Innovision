@@ -19,7 +19,7 @@ const BehindTheScenes = ({ title, description, img }: BehindTheScenesProps) => {
             transition={{ duration: 1, delay: 0.3 }}
         >
             <h3 className="text-2xl font-semibold text-[#624CF5]">{title}</h3>
-            <p className="text-gray-600">
+            <p className="text-white-2">
                 {description}
             </p>
             <motion.div

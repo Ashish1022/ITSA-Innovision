@@ -19,9 +19,9 @@ export default function GalleryPage() {
     return (
         <>
             <Transition />
-            <section className="py-8 bg-gray-100">
+            <section className="py-8 bg-[#282b30]">
                 <div className="container mx-auto px-4">
-                    <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">Gallery</h1>
+                    <h1 className="text-4xl font-bold text-center text-white-1 mb-8">Gallery</h1>
                     <FilterBar
                         categories={categories}
                         selectedCategory={selectedCategory}

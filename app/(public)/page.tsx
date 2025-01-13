@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Transition />
-      <section className="bg-[#f5f7ff] text-gray-800">
+      <section className="bg-[#282b30] text-white-1">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col-reverse lg:flex-row items-center gap-12 z-10">
           {/* Left Content */}
           <motion.div
@@ -30,7 +30,7 @@ const Home = () => {
                   Register
                 </Link>
               </Button>
-              <Button asChild className="rounded-full  max-md:w-full bg-grey-500/10 border border-primary-500 text-black-1" size="lg">
+              <Button asChild className="rounded-full  max-md:w-full bg-grey-500/10 border border-primary-500 text-white-1" size="lg">
                 <Link href='/gallery'>
                   Explore
                 </Link>
@@ -63,7 +63,7 @@ const Home = () => {
         <Separator className="border border-primary-500" />
         {/* Behind the Scenes Section */}
         <motion.div
-          className="bg-[#e9ebf3] py-20"
+          className="bg-[#1e2124] py-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -72,7 +72,7 @@ const Home = () => {
             <h2 className="text-3xl font-semibold text-[#624CF5]">
               Behind the Scenes: Our Journey in Action
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-white-1">
               Ever wonder how the magic happens? Here’s an inside look at what it takes to bring our ideas to life:
             </p>
 

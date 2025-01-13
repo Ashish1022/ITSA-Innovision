@@ -17,6 +17,7 @@ export const createEvent = mutation({
         price: v.string(),
         isFree: v.boolean(),
         eventType: v.boolean(),
+        url: v.string(),
     },
     handler: async (ctx, args) => {
         return await ctx.db.insert("events", {
@@ -29,7 +30,8 @@ export const createEvent = mutation({
             endDateTime: args.endDateTime,
             price: args.price,
             isFree: args.isFree,
-            eventType: args.eventType
+            eventType: args.eventType,
+            url: args.url,
         })
     }
 })
