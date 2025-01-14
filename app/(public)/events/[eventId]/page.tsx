@@ -22,7 +22,7 @@ const page = ({ params }: { params: { eventId: Id<"events"> } }) => {
 
   return (
     <>
-      {/* <Transition /> */}
+      <Transition />
       <section className="flex justify-center bg-[#282b30] bg-dotted-pattern bg-contain h-full">
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl">
           <Image
