@@ -4,8 +4,6 @@ import { Button } from '@/components/ui/button';
 import { api } from '@/convex/_generated/api';
 import { Id } from '@/convex/_generated/dataModel';
 import { useQuery } from 'convex/react';
-import { IndianRupee } from 'lucide-react';
-import Link from 'next/link';
 
 import React from 'react'
 
@@ -17,7 +15,7 @@ interface FooterProps {
     eventId: Id<"events">;
 };
 
-const Footer = ({ title, ownerLabel, reviews, seller, eventId }: FooterProps) => {
+const Footer = ({ title, eventId }: FooterProps) => {
 
     const event = useQuery(api.events.getEventById, { eventId });
     const handleClick = () => {
@@ -26,10 +24,10 @@ const Footer = ({ title, ownerLabel, reviews, seller, eventId }: FooterProps) =>
 
     return (
         <div className="relative bg-[#acbcf7] p-3 space-y-6 ">
-            {/* <h3 className="font-bold">"ITSA Innovision"</h3> */}
-            <p className="text-[14px] font-medium max-w-[calc(100%-20px)]">
+            <h3 className="font-bold">{title}</h3>
+            {/* <p className="text-[14px] font-medium max-w-[calc(100%-20px)]">
                 {title}
-            </p>
+            </p> */}
             {/* <div className="flex gap-x-1.5 text-md font-normal">
                 <Star className="font-semibold" />
                 <p className="font-semibold">23</p>

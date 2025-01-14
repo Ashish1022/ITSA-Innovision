@@ -74,7 +74,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/culturalteam.jpeg",
         description: "In charge of cultural events.",
       },
@@ -89,7 +89,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/creativeteam.jpeg",
         description: "In charge of creative events.",
       },
@@ -104,7 +104,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/technicalteam.jpeg",
         description: "In charge of technical events.",
       },
@@ -119,7 +119,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/prsponsorteam.jpeg",
         description: "In charge of sponsorships.",
       },
@@ -134,7 +134,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/socialmediateam.jpeg",
         description: "In charge of sponsorships.",
       },
@@ -149,7 +149,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/gdteam.jpeg",
         description: "In charge of sponsorships.",
       },
@@ -164,7 +164,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/editorialteam.jpeg",
         description: "In charge of sponsorships.",
       },
@@ -179,7 +179,7 @@ export const teams: Team[] = [
     },
     members: [
       {
-        name: "Member",
+        name: "Members",
         image: "/assets/teams/prsponsorteam.jpeg",
         description: "In charge of sponsorships.",
       },

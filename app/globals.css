@@ -299,7 +299,6 @@ body {
 
 
 .page {
-  padding: 2rem;
   background: url("/assets/images/teams_bg.svg");
   margin: 0 auto;
 }
@@ -310,14 +309,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* Team Card styling */
 .team-card {
   position: relative;
   background: linear-gradient(145deg, #fdf0e0, #f2f2f2);
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* reduced shadow */
-  transform: none; /* removed rotation */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
+  transform: none; 
   transition: box-shadow 0.4s ease;
   overflow: hidden;
   animation: fadeIn 0.8s ease forwards;
@@ -371,7 +369,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Decorative zigzag under headers */
 .team-head h3::after,
 .members h3::after {
   content: '';
@@ -382,7 +379,6 @@ body {
   background: linear-gradient(90deg, #e63946, #f77f00);
 }
 
-/* Member Card styling */
 .member-card {
   background: #ffffff;
   border: 2px solid #f0f0f0;
@@ -420,7 +416,6 @@ body {
   color: #6c757d;
 }
 
-/* Button in team card */
 .team-card .view-more {
   display: inline-block;
   margin-top: 1.5rem;
@@ -439,16 +434,14 @@ body {
   background: linear-gradient(90deg, #3a0571, #6a0572);
 }
 
-/* Staggered Animation */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    /* transform: translateY(50px); */
   }
 
   100% {
     opacity: 1;
-    /* transform: translateY(0); */
   }
 }
 
