@@ -7,7 +7,7 @@ import { images } from "@/constants";
 import Transition from "@/components/shared/Transition";
 
 
-const categories = ["All", "Events", "Workshops", "Achievements", "Memories"];
+const categories = ["All", "Events", "Sports", "Memories"];
 
 export default function GalleryPage() {
     const [selectedCategory, setSelectedCategory] = useState("All");

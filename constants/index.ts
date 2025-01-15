@@ -205,15 +205,20 @@ export const carousel = [
 
 
 export const images = [
+  
   { id: 1, src: "/assets/gallery/memories/memories1.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra Pooja" },
   { id: 2, src: "/assets/gallery/memories/memories2.jpeg", alt: "Photo 1", category: "Memories", title: "Industrial Visit" },
   { id: 3, src: "/assets/gallery/memories/memories3.jpeg", alt: "Photo 1", category: "Memories", title: "Photobooth" },
   { id: 4, src: "/assets/gallery/memories/memories4.jpeg", alt: "Photo 1", category: "Memories", title: "Dart Throw" },
   { id: 5, src: "/assets/gallery/memories/memories5.jpeg", alt: "Photo 1", category: "Memories", title: "Dussehra" },
 
+  { id: 6, src: "/assets/images/human_ludo.jpg", alt: "Photo 1", category: "Events", title: "Human Ludo" },
+  { id: 7, src: "/assets/images/dart_throw.webp", alt: "Photo 1", category: "Events", title: "Dart Throw" },
+  { id: 8, src: "/assets/images/escape_room.webp", alt: "Photo 1", category: "Events", title: "Escape Room" },
+  { id: 9, src: "/assets/images/tech_expo.webp", alt: "Photo 1", category: "Events", title: "Tech Expo" },
 
-  
-
+  { id: 10, src: "/assets/gallery/Sports/WhatsApp Image 2025-01-15 at 10.02.56 PM.jpeg", alt: "Photo 1", category: "Sports", title: "Human Ludo" },
+  { id: 11, src: "/assets/gallery/Sports/WhatsApp Image 2025-01-15 at 10.02.56 PM (1).jpeg", alt: "Photo 1", category: "Sports", title: "Dart Throw" },
 
   // Add more images...
 ];
