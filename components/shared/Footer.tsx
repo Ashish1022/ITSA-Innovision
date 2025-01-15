@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import NavItems from "./NavItems"
+import { Instagram } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -14,11 +15,17 @@ const Footer = () => {
             height={38}
           />
         </Link>
-        <p>2024 ITSA. All Rights reserved by 
+        <div className="flex gap-2">
+          <p>2025 ITSA. All Rights reserved by
+          </p>
           <Link href='https://ashishport.vercel.app/' target={'_blank'} className="text-primary-500">
-            &nbsp;ZERO
+            ZERO
           </Link>
-        </p>
+          <Link href='https://www.instagram.com/ashishhh2210/' target={'_blank'} className="text-primary-500">
+            <Instagram />
+          </Link>
+        </div>
+
       </div>
     </footer>
   )
